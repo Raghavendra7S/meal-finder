@@ -82,3 +82,8 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
     mealsDiv.innerHTML = "<p>Something went wrong</p>";
     console.error(err);
   });
+if (!category) {
+  document.getElementById("meals").innerHTML =
+    "<p>Please select a category</p>";
+  throw new Error("Category missing in URL");
+}

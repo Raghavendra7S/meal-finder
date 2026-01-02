@@ -177,4 +177,14 @@ async function getInformation() {
 }
 getInformation();
 
-console.log(window.location.pathname);
+function goToCategory(category) {
+  window.location.href =
+    `/MEALFINDER/html/meals.html?category=${category}`;
+}
+
+card.addEventListener("click", () => {
+  goToCategory(images.strCategory);
+});
+
+
+

@@ -1,0 +1,65 @@
+#meals{
+     width:100% auto;
+    /* max-height:auto; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:10px;
+    margin: 10px;
+    background-color: aliceblue;
+    
+
+}
+.meal-card{
+    border:1px solid black;
+    border-radius: 5px;
+  text-align: center;
+    padding-left:10px;
+    padding-bottom: 10px;
+   
+}
+.meal-card img{
+    width:250px;
+    border-radius: 05px;
+     transition: transform 0.20s ease;
+
+}
+.meal-card:hover img{
+    transform: scale(1.10);
+}
+
+.main2{
+    margin-top:10px;
+
+}
+.main2{
+    padding:20px;
+    border:1px solid rgb(210, 133, 8);
+    background-color: rgb(221, 233, 233);
+    margin: 10px;
+
+}
+#tit{
+    color:red;
+
+}
+#descri-tion{
+    font-size:20px;
+}
+
+#titles{
+  border-width: 5px;
+    margin-top:100px;
+  margin-bottom: 50px;
+  padding-left:20px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
+/* Tablets */
+@media (max-width: 768px) {}
+
+/* Mobiles */
+@media (max-width: 480px) {}

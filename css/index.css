@@ -5,16 +5,14 @@ body{
     box-sizing: border-box;
 }
 #header{
-    width:100% auto;
-    height:100px auto;
-    background-color: rgb(245, 91, 91);
+    width:100%;
+    max-height:100px auto;
+    background-color: rgb(231, 14, 14);
     display:flex;
     flex-direction: row;
     align-items:center;
-    /* justify-content: space-around; */
-    gap: 80%; 
-    padding-left: 20px;
-    position:sticky;
+    padding-left: 50px;
+    position:fixed;
 
 }
 
@@ -32,6 +30,24 @@ body{
     color:white;
 }
 
+.sidebarc{
+    width:100%;
+   padding-left: 75%;
+   
+}
+.openc{
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:rgb(226, 46, 46) ;
+}
+.openc i{
+    color:white;
+    font-weight: bold;
+    
+}
+
+
 #open-sidebar{
     width:200px;
     max-height:500px;
@@ -39,26 +55,45 @@ body{
     border:1px solid rgba(14, 16, 14, 0.759);
     border-radius: 10px;
     position:fixed;
-    top:80px;
-    right:0;
-     transform: translateX(100%); 
+     top: 0;
+     right:0px;
+    transform: translateX(100%);  
     transition:0.3s;
     z-index: 999;
      overflow-y: auto;
+   
 
     
 }
 #open-sidebar.active{
     transform: translateX(0%); 
+    
 }
+
+.closec {
+  position: absolute;
+  top: 5px;      /* ⬅️ better */
+  right: 0px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+
 .sideancher{
     font-size: 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 0.5px solid black;
     background-color: white;
-    padding:10px;
+    padding-left: 10px;
+    padding-top:20px;
     display: block;
     text-decoration: none;
-    text-align: center;
+   
     cursor: pointer;
 }
 .main{
@@ -85,19 +120,19 @@ body{
 .input-ser input{
     width:400px;
     padding:15px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 30px;;
+
     font-size: 20px;
     
 }
 .input-ser button{
     padding:15px;
-   border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 50%;
     font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
-    background-color: rgb(89, 232, 124);
-    color:rgb(8, 8, 211);
+    background-color: rgb(237, 44, 5);
+    color:rgb(210, 210, 210);
 
 }
 .bg-text{
@@ -118,18 +153,28 @@ body{
     color:block;
 }
 .p-disc{
-    width:90%;
-    font-size: 30px;
- 
-    color:black;
+  font-size:18px;
+    padding:20px;
+    border:1px solid green;
+    background-color: lightcyan;
+    margin: 10px;
+
 
 }
 .description{
     width:100% auto;
     height:400px auto;
-   
     border:1px solid black;
+    
    
+}
+.desimg{
+    width:500px;
+    padding-left: 20px;
+}
+.descname{
+     padding-left: 20px;
+
 }
 .cardscat{
     background-color: rgb(209, 207, 207);
@@ -138,7 +183,7 @@ body{
 .category{
     width:100% auto;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
    gap:10px;
     
 }
@@ -148,11 +193,24 @@ body{
  padding:10px;
 }
 .card img{
-    width:450px;
+    width:200px;
     display: flex;
     flex-direction: column;
     align-items: center;
      margin-bottom: 20px;
-   
-    
+     transition: transform 0.3s ease;
 }
+.card:hover img{
+    transform:scale(1.25)
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
+/* Tablets */
+@media (max-width: 768px) {}
+
+/* Mobiles */
+@media (max-width: 480px) {}

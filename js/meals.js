@@ -3,6 +3,8 @@
 const params = new URLSearchParams(window.location.search);
 const category = params.get("category");
 
+console.log("Category from url", category);
+
 const h3=document.getElementById("tit");
 const details=document.getElementById("descri-tion")
 

@@ -177,3 +177,4 @@ async function getInformation() {
 }
 getInformation();
 
+console.log(window.location.pathname);

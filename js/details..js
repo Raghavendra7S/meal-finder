@@ -179,7 +179,7 @@ getInformation();
 
 function goToCategory(category) {
   window.location.href =
-    `/meal-finder/html/meals.html?category=${encodeURIComponent(category)}`;
+    `/MEALFINDER/html/meals.html?category=${encodeURIComponent(category)}`;
 }
 
 

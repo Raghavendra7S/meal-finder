@@ -68,7 +68,7 @@ fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
       card.addEventListener("click",()=>{
         console.log("clicked")
         window.location.href=
-        `html/details.html?id=${meal.idMeal}`;
+        `details.html?id=${meal.idMeal}`;
       })
 
     

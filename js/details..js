@@ -179,8 +179,9 @@ getInformation();
 
 function goToCategory(category) {
   window.location.href =
-    `/MEALFINDER/html/meals.html?category=${category}`;
+    `/meal-finder/html/meals.html?category=${encodeURIComponent(category)}`;
 }
+
 
 card.addEventListener("click", () => {
   goToCategory(images.strCategory);

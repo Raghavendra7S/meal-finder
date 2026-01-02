@@ -156,7 +156,7 @@ function images(data) {
     card.addEventListener("click", () => {
       console.log("Clicked:", images.strCategory); // DEBUG
        window.location.href =
-        `/MEALFINDER/html/meals.html?category=${images.strCategory}`;
+        `/meal-finder/html/meals.html?category=${images.strCategory}`;
     });
 
    
